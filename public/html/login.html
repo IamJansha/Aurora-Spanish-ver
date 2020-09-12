@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Aurora</title>
+        <link rel="icon" type="image/ico" href="../files/favicon.ico">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/account.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/login.js"></script>
+
+    </head>    
+    <body onload="return checkAuth()">
+        <div class="header">
+            <a class="bold">Aurora</a>
+            <div class="header-right">
+                <a href="/home">Inicio</a>
+                <a href="/download">Descargar</a>
+                <a href="/signup">Registrarse</a>
+            </div>
+        </div>
+        <div class="center">
+            <form id="loginForm">
+                <a class="title">Iniciar Sesión</a><br><br>
+                <a>Email</a>
+                <input type="email" id="email" name="email" placeholder="tunombre@aurorafn.dev"> 
+                <a>Contraseña</a>
+                <input type="password" id="password" name="password" placeholder="contraseñasupersecreta">
+                <a>¿No tienes ninguna cuenta?</a>
+                <a href="/signup">Presiona aquí</a>
+                <a> para crear una.</a>
+                <br>
+                <div id="errorClass">
+                    <a id="notice" class="title" style="font-size: 25px;"></a>
+                </div>      
+                <button>Iniciar Sesión</button>
+            </form>
+        </div>
+    </body>
+</html>

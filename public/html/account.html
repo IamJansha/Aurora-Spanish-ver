@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Cuenta</title>
+        <link rel="icon" type="image/ico" href="../files/favicon.ico">
+        <link rel="stylesheet" href="../css/account.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/account.js"></script>
+    </head>
+    <body onload="grabData()">
+        <div class="header">
+            <a class="bold">Cuenta</a>
+            <div class="header-right">
+                <a href="/home">Inicio</a>
+                <a href="/download">Descargar</a>
+                <a href="/id/api/kill?redirect=true">Cerrar Sesión</a>
+            </div>
+        </div>
+    
+        <div class="center">
+            <a style="font-size: 18px;">ID de la cuenta: </a>
+            <a id="accountid" style="font-size: 15px;"></a>
+            <br>
+            <a style="font-size: 18px;">Nombre de Usuario: </a>
+            <a id="username" style="font-size: 15px;"></a>
+            <br>
+            <br>
+            <form id="lobbyForm">
+                <a class="title">Sala</a><br>
+                <a>Pavos</a><br>
+                <a class="description">Cantidad de Pavos.</a><br>
+                <input type="number" id="vbucks" name="vbucks" placeholder="PAVOS_DE_LA_CUENTA"> 
+                <a>Nivel</a><br>
+                <a class="description">Nivel de Temporada y de la Cuenta.</a><br>
+                <input type="number" id="level" name="level" placeholder="NIVEL_DE_LA_CUENTA">
+                <a>Permitir regalos</a><br>
+                <a class="description">_Hacer que la cuenta reciba regalos o no.</a><br>
+                <select name="allowgifts" id="allowgifts">
+                    <option id="yes" value="yes">Si</option>
+                    <option id="no" value="no">No</option>
+                </select>      
+                <a>Limpiar los regalos </a><br>
+                <a class="description">Eliminar los regalos pendientes.</a><br>         
+                <button type="button" onclick="removeGifts(); return false;">Limpiar regalos</button>
+                <br>
+                <a id="updated-account" class="title" style="font-size: 20px;"></a><br>
+                <button type="submit">Aplicar</button>
+            </form>
+            <br>
+            <form id="giftForm">
+                <a class="title">Regalos</a><br>
+                <a>Usuario</a><br>
+                <a class="description">Nombre de Usuario del la persona que quieres regalar.</a><br>
+                <input type="text" id="gift_username" name="gift_username" placeholder="slush"> 
+                <a>Caja de Regalos</a><br>
+                <a class="description">Estilo de regalo.</a><br>
+                <select id="giftbox" name="giftbox">
+                </select>                
+                <a>Cosmetico</a><br>
+                <a class="description">Nombre del cosmetico a regalar.</a><br>
+                <input type="text" id="gift_item" name="gift_item" placeholder="Recluta">                 
+                <a>Mensaje</a><br>
+                <a class="description">(Opcional) Mensaje que se da con el regalo.</a><br>
+                <input type="text" id="gift_message" name="gift_message" placeholder="Espero que te guste este regalo, DISFRUTA!"> 
+                <a id="gift-notice" class="title" style="font-size: 20px;">Aplicado!</a><br>
+                <button type="submit">Regalar!</button>
+            </form>
+        </div>
+    </body>
+</html>

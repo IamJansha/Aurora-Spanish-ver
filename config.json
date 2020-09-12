@@ -1,0 +1,19 @@
+{
+    "port": 80,
+    "xmppPort": 443,
+    "db": "mongodb://127.0.0.1",
+    "item1": "AthenaDance:spid_171_rose",
+    "item2": "AthenaCharacter:cid_002_athena_commando_f_default",
+    "item3": "AthenaCharacter:cid_003_athena_commando_f_default",
+    "item4": "AthenaCharacter:cid_004_athena_commando_f_default",
+    "item5": "AthenaCharacter:cid_005_athena_commando_m_default",
+    "item6": "AthenaCharacter:cid_006_athena_commando_m_default",
+    "ft1": "AthenaCharacter:cid_795_athena_commando_m_dummeez",
+    "ft2": "AthenaCharacter:cid_779_athena_commando_m_henchmangoodshorts",
+    "newsImage": "https://cdn.discordapp.com/attachments/717715839004180551/739112857311903794/6664cd4a44dfc96f1e5f35c8b6142135.jpg",
+    "newsTitle": "Jgames YT",
+    "newsText": "Suscribete, porque si te suscribes, te ganas una suscripción",
+    "noticeTitle": "Aurora",
+    "noticeText": "Desarrollado Cyuubi & Slushia",
+    "seasonStage": "season14"
+}
